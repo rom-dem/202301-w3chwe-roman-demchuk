@@ -3,9 +3,12 @@ import type { PokemonData } from "../types/types.js";
 // Let pokemonData: PokemonData;
 const apiUrl = "https://pokeapi.co/api/v2/pokemon/";
 
-export const getPokeapi = async (id: number): Promise<PokemonData[]> => {
+export const getPokeapi = async (
+  start: number,
+  end: number
+): Promise<PokemonData[]> => {
   const pokemons = [];
-  for (let position = 1; position <= id; position++) {
+  for (let position = start; position <= end; position++) {
     const response = fetch(`${apiUrl}${position}`);
     pokemons.push(response);
   }
