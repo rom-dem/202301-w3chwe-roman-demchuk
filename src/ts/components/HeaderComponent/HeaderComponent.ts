@@ -4,7 +4,7 @@ class HeaderComponent extends Component {
   render() {
     super.render();
     this.element.innerHTML = `
-      <img class="header__logo" src="images/pokemon-logo.svg" alt="pokemon-logo" height=95>
+      <img class="header__logo" src="images/pokemon-logo.svg" alt="pokemon-logo" height=95 width=259>
     `;
   }
 }

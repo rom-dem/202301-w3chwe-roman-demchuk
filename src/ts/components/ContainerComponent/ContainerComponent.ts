@@ -7,6 +7,7 @@ class ContainerComponent extends Component {
         <ul class="card-container__list list">
         </ul>
     `;
+    return this.element.innerHTML;
   }
 }
 

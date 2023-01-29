@@ -31,8 +31,7 @@ const pokemonList = document.querySelector(".card-container__list");
   );
   const randomHigh = randomLow + (pokemonsPerPage - 1);
   const pokemons = await getPokeapi(randomLow, randomHigh);
-  pokemons.map((info) => {
+  pokemons.forEach((info) => {
     const pokemonCard = new CardComponent(pokemonList, info);
-    return pokemonCard;
   });
 })();
