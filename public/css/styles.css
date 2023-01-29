@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+@media (min-width: 700px) {
+  .header {
+    background-color: green;
+    flex-direction: row;
+  }
+}
