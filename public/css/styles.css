@@ -20,3 +20,151 @@ html {
     flex-direction: row;
   }
 }
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 10px;
+}
+
+ul,
+li {
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  max-width: 600px;
+  gap: 10px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
+  flex: 1;
+}
+
+.card {
+  border: solid 1px black;
+  border-radius: 15px;
+}
+
+.card__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__title {
+  text-transform: capitalize;
+}
+
+@media (min-width: 700px) {
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .card {
+    border: solid 1px black;
+    border-radius: 15px;
+  }
+
+  .card__article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card__title {
+    text-transform: capitalize;
+  }
+}
+
+.card-type-normal {
+  background-color: rgb(168, 168, 120);
+}
+
+.card-type-fire {
+  background-color: rgb(240, 128, 48);
+}
+
+.card-type-water {
+  background-color: rgb(104, 144, 240);
+}
+
+.card-type-grass {
+  background-color: rgb(120, 200, 80);
+}
+
+.card-type-electric {
+  background-color: rgb(248, 208, 48);
+}
+
+.card-type-ice {
+  background-color: rgb(152, 216, 216);
+}
+
+.card-type-fighting {
+  background-color: rgb(192, 48, 40);
+}
+
+.card-type-poison {
+  background-color: rgb(160, 64, 160);
+}
+
+.card-type-ground {
+  background-color: rgb(224, 192, 104);
+}
+
+.card-type-flying {
+  background-color: rgb(168, 144, 240);
+}
+
+.card-type-psychic {
+  background-color: rgb(248, 88, 136);
+}
+
+.card-type-bug {
+  background-color: rgb(168, 184, 32);
+}
+
+.card-type-rock {
+  background-color: rgb(184, 160, 56);
+}
+
+.card-type-ghost {
+  background-color: rgb(112, 88, 152);
+}
+
+.card-type-dragon {
+  background-color: rgb(112, 56, 248);
+}
+
+.card-type-dark {
+  background-color: rgb(112, 88, 72);
+}
+
+.card-type-steel {
+  background-color: rgb(184, 184, 208);
+}
+
+.card-type-fairy {
+  background-color: rgb(255, 155, 225);
+}

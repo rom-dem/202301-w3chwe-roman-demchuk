@@ -25,7 +25,7 @@ const pokemonList = document.querySelector(".card-container__list");
 
 (async () => {
   const totalPokemons = 1008;
-  const pokemonsPerPage = 9;
+  const pokemonsPerPage = 6;
   const randomLow = Math.floor(
     Math.random() * (totalPokemons - pokemonsPerPage)
   );
