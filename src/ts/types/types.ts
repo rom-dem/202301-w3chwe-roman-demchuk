@@ -4,3 +4,8 @@ export interface PokemonData {
   id: number;
   sprites: { other: { "official-artwork": { front_default: string } } };
 }
+export interface ComponentStructure {
+  element: Element;
+  render: () => void;
+  addListeners?: () => void;
+}
