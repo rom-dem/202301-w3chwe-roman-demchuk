@@ -22,6 +22,7 @@ class CardComponent extends Component implements CardComponentStructure {
           </div>    
         </article>
     `;
+    return this.element.innerHTML;
   }
 }
 

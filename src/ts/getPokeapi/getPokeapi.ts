@@ -1,6 +1,5 @@
 import type { PokemonData } from "../types/types.js";
 
-// Let pokemonData: PokemonData;
 const apiUrl = "https://pokeapi.co/api/v2/pokemon/";
 
 export const getPokeapi = async (
